@@ -1,0 +1,10 @@
+/* shared/css/variables.css */
+:root {
+    --primary-color: #007bff;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --header-height: 60px;
+    --footer-height: 50px;
+    --max-width: 1200px;
+  }
+  
