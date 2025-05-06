@@ -1,50 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Trueques</title>
-    <link rel="stylesheet" href="../../shared/css/global.css">
+    <title>Publicar Artículo</title>
+    <link rel="stylesheet" href="publish.css"> <!-- Importación del archivo CSS -->
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <!-- Logo -->
-            <a href="../explorer/index.html" class="logo">Sistema de Trueques</a>
-        
-            <!-- Navegación principal -->
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="../explorer/index.html">Explorar</a></li>
-                    <li><a href="../negotiation/index.html">Mis intercambios</a></li>
-                    <li><a href="../publish/index.html">Publicar artículo</a></li>
-                </ul>
-            </nav>
-        
-            <!-- Buscador -->
-            <form action="../explorer/index.html" method="GET" class="search-form">
-                <input type="text" name="q" placeholder="Buscar artículo…" />
-                <button type="submit" aria-label="Buscar">🔍</button>
-            </form>
-        </div>
-    </header>
+    <section class="publicar-articulo">
+        <h2>Publicar un artículo</h2>
+        <form class="formulario-publicacion">
+            <div class="form-row">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Escribe un título">
+            </div>
 
-    <!-- Contenido principal -->
-    <main>
-        <h1>Esto es publish prueba</h1>
-    </main>
+            <div class="form-row">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Escribe una descripción"></textarea>
+            </div>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>© 2025 Sistema de Trueques. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Ayuda</a>
-                <a href="#">Términos</a>
-                <a href="#">Contacto</a>
+            <div class="form-row">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria">
+                    <option value="" disabled selected>Selecciona</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="ropa">Ropa</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingresa una ciudad">
+            </div>
+
+            <div class="form-row">
+                <span>Estado</span>
+                <label><input type="radio" name="estado" value="nuevo" checked> Nuevo</label>
+                <label><input type="radio" name="estado" value="usado"> Usado</label>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" class="btn-publicar">Publicar</button>
+            </div>
+        </form>
+
+        <div class="articulos-similares">
+            <h3>Artículos similares</h3>
+            <div class="similares-grid">
+                <img src="../../assets/images/libro.jpg" alt="Libro">
+                <img src="../../assets/images/reloj.jpg" alt="Reloj">
+                <img src="../../assets/images/plancha.jpg" alt="Plancha">
             </div>
         </div>
-    </footer>
+    </section>
 </body>
 </html>
