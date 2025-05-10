@@ -1,148 +1,136 @@
-/* shared/css/global.css */
-
-/* Reset básico */
 * {
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
   }
   
-  /* Contenedor central */
   .container {
-    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 0 20px; /* Agrega un espacio interno a los lados */
-    display: flex;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
   }
   
-  /* Header */
   .site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff; /* Fondo blanco */
-    padding: 10px 20px;
-    border-bottom: 1px solid #e5e5e5;
-    position: sticky; /* Hace que el header sea visible al hacer scroll */
-    top: 0; /* Fija el header en la parte superior */
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra para diferenciarlo del contenido */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .site-header .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #007bff; /* Color azul */
-    text-decoration: none;
-    margin-right: 820px; /* Empuja los enlaces hacia la derecha */
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 820px;
   }
 
   .site-header .site-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 5px; /* Espaciado de 5px entre los enlaces */
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  margin: 0;
   }
 
   .site-header .site-nav a {
-    text-decoration: none;
-    color: #333; /* Color del texto */
-    font-weight: 500;
-    font-size: 1rem;
-    margin: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 20px;
   }
 
   .search-form {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaciado entre el input y el botón */
+  display: flex;
+  align-items: center;
+  gap: 10px;
   }
 
   .search-form input {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px; /* Bordes redondeados */
-    outline: none;
-    font-size: 1rem;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;
   }
 
   .search-form button {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #333;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
   }
   
-  /* Footer */
   .site-footer {
-    background: #f9f9f9;
-    height: var(--footer-height);
-    border-top: 1px solid #e5e5e5;
+  background: #f9f9f9;
+  height: var(--footer-height);
+  border-top: 1px solid #e5e5e5;
   }
   .site-footer .container {
-    justify-content: space-between;
+  justify-content: space-between;
   }
   .site-footer p {
-    color: var(--text-color);
-    font-size: 0.9rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
   }
   .footer-links a {
-    text-decoration: none;
-    margin-left: 16px;
-    color: var(--text-color);
-    font-size: 0.9rem;
+  text-decoration: none;
+  margin-left: 16px;
+  color: var(--text-color);
+  font-size: 0.9rem;
   }
 
-  /* Título principal */
   h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
   }
 
-  /* Título principal */
   .page-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 20px; /* Espacio superior */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
   }
   
-  /* Filtros superiores */
   .filters {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
   }
   
   .filters select {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
   }
 
-  /* Contenedor principal */
   .explorer-layout {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start; /* Alinea la columna de filtros más arriba */
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
   }
 
-  /* Sidebar de filtros */
   .sidebar {
-    flex: 0 0 250px; /* Ancho fijo para la columna de filtros */
-    position: sticky;
-    top: 20px; /* Hace que la columna de filtros esté fija al hacer scroll */
+  flex: 0 0 250px;
+  position: sticky;
+  top: 20px;
   }
 
-  /* Grilla de artículos */
   .articles-grid {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
   }

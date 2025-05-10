@@ -4,19 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Intercambia artículos – Sistema de Trueques</title>
-  <!-- estilos globales -->
   <link rel="stylesheet" href="../../shared/css/global.css" />
-  <!-- estilos específicos de este módulo -->
   <link rel="stylesheet" href="explorer.css" />
 </head>
 <body>
-  <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <!-- Logo -->
       <a href="index.html" class="logo">Truequi</a>
-
-      <!-- Navegación principal -->
       <nav class="site-nav">
         <ul>
           <li><a href="./index.html">Explorar</a></li>
@@ -24,45 +18,33 @@
           <li><a href="../publish/index.html">Publicar</a></li>
         </ul>
       </nav>
-
-      <!-- Buscador -->
       <form action="index.html" method="GET" class="search-form">
         <input type="text" name="q" placeholder="Buscar" />
         <button type="submit" aria-label="Buscar">🔍</button>
       </form>
     </div>
   </header>
-
-  <!-- Contenido principal -->
   <main>
     <div class="container explorer-layout">
-      <!-- Título principal -->
       <h1>Artículos</h1>
-
-      <!-- Filtros superiores -->
       <div class="filters">
-
         <select name="category-filter" id="category-filter">
           <option value="" disabled selected>Filtrar por categoría</option>
           <option value="bicicletas">Bicicletas</option>
           <option value="libros">Libros</option>
           <option value="electrodomesticos">Electrodomésticos</option>
         </select>
-
         <select name="state-filter" id="state-filter">
           <option value="" disabled selected>Filtrar por estado</option>
           <option value="nuevo">Nuevo</option>
           <option value="usado">Usado</option>
         </select>
-
         <select name="sort-filter" id="sort-filter">
           <option value="" disabled selected>Ordenar por</option>
           <option value="recientes">Más recientes</option>
           <option value="antiguos">Más antiguos</option>
         </select>
       </div>
-
-      <!-- Sidebar de filtros -->
       <aside class="sidebar">
         <h2>Filtros</h2>
         <div class="filter-section">
@@ -85,8 +67,6 @@
           </ul>
         </div>
       </aside>
-
-      <!-- Grilla de artículos -->
       <section class="articles-grid">
         <article class="card">
           <img src="../../assets/images/bicicleta.jpg" alt="Bicicleta de montaña" />
@@ -95,7 +75,6 @@
           <p class="location">Medellín</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/libro.jpg" alt="Lote de libros" />
           <h4>Lote de libros</h4>
@@ -103,7 +82,6 @@
           <p class="location">Bogotá</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/microondas.jpg" alt="Microondas" />
           <h4>Microondas</h4>
@@ -111,7 +89,6 @@
           <p class="location">Cali</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/auriculares.jpg" alt="Auriculares" />
           <h4>Auriculares inalámbricos</h4>
@@ -119,7 +96,6 @@
           <p class="location">Barranquilla</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/juego-mesa.jpg" alt="Juego de mesa" />
           <h4>Juego de mesa</h4>
@@ -127,7 +103,6 @@
           <p class="location">Pereira</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/cafetera.jpg" alt="Cafetera" />
           <h4>Cafetera eléctrica</h4>
@@ -135,15 +110,13 @@
           <p class="location">Cartagena</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
-        <article class="card">
+        <article class="card"></article>
           <img src="../../assets/images/plancha.jpg" alt="Cafetera" />
           <h4>Plancha</h4>
           <p class="state">Nuevo</p>
           <p class="location">Manizales</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/telefono.jpg" alt="Cafetera" />
           <h4>Teléfono inalámbrico</h4>
@@ -151,7 +124,6 @@
           <p class="location">Bucaramanga</p>
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
-
         <article class="card">
           <img src="../../assets/images/reloj.jpg" alt="Cafetera" />
           <h4>Reloj de pared</h4>
@@ -162,8 +134,6 @@
       </section>
     </div>
   </main>
-
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <p>© 2025 Sistema de Trueques. Todos los derechos reservados.</p>
