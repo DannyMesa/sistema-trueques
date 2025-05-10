@@ -24,6 +24,10 @@
     background-color: #fff; /* Fondo blanco */
     padding: 10px 20px;
     border-bottom: 1px solid #e5e5e5;
+    position: sticky; /* Hace que el header sea visible al hacer scroll */
+    top: 0; /* Fija el header en la parte superior */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra para diferenciarlo del contenido */
   }
 
   .site-header .logo {
