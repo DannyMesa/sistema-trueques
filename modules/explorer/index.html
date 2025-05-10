@@ -36,6 +36,32 @@
   <!-- Contenido principal -->
   <main>
     <div class="container explorer-layout">
+      <!-- Título principal -->
+      <h1>Artículos</h1>
+
+      <!-- Filtros superiores -->
+      <div class="filters">
+
+        <select name="category-filter" id="category-filter">
+          <option value="" disabled selected>Filtrar por categoría</option>
+          <option value="bicicletas">Bicicletas</option>
+          <option value="libros">Libros</option>
+          <option value="electrodomesticos">Electrodomésticos</option>
+        </select>
+
+        <select name="state-filter" id="state-filter">
+          <option value="" disabled selected>Filtrar por estado</option>
+          <option value="nuevo">Nuevo</option>
+          <option value="usado">Usado</option>
+        </select>
+
+        <select name="sort-filter" id="sort-filter">
+          <option value="" disabled selected>Ordenar por</option>
+          <option value="recientes">Más recientes</option>
+          <option value="antiguos">Más antiguos</option>
+        </select>
+      </div>
+
       <!-- Sidebar de filtros -->
       <aside class="sidebar">
         <h2>Filtros</h2>
@@ -61,8 +87,8 @@
       </aside>
 
       <!-- Grilla de artículos -->
-    <section class="articles-grid">
-      <article class="card">
+      <section class="articles-grid">
+        <article class="card">
           <img src="../../assets/images/bicicleta.jpg" alt="Bicicleta de montaña" />
           <h4>Bicicleta de montaña</h4>
           <p class="state">Usado</p>
@@ -110,31 +136,29 @@
           <a href="../detail/index.html" class="btn">Solicitar trueque</a>
         </article>
 
-          <article class="card">
-            <img src="../../assets/images/plancha.jpg" alt="Cafetera" />
-            <h4>Plancha</h4>
-            <p class="state">Nuevo</p>
-            <p class="location">Manizales</p>
-            <a href="../detail/index.html" class="btn">Solicitar trueque</a>
-          </article>
+        <article class="card">
+          <img src="../../assets/images/plancha.jpg" alt="Cafetera" />
+          <h4>Plancha</h4>
+          <p class="state">Nuevo</p>
+          <p class="location">Manizales</p>
+          <a href="../detail/index.html" class="btn">Solicitar trueque</a>
+        </article>
 
-          <article class="card">
-            <img src="../../assets/images/telefono.jpg" alt="Cafetera" />
-            <h4>Teléfono inalámbrico</h4>
-            <p class="state">Usado</p>
-            <p class="location">Bucaramanga</p>
-            <a href="../detail/index.html" class="btn">Solicitar trueque</a>
-          </article>
+        <article class="card">
+          <img src="../../assets/images/telefono.jpg" alt="Cafetera" />
+          <h4>Teléfono inalámbrico</h4>
+          <p class="state">Usado</p>
+          <p class="location">Bucaramanga</p>
+          <a href="../detail/index.html" class="btn">Solicitar trueque</a>
+        </article>
 
-          <article class="card">
-            <img src="../../assets/images/reloj.jpg" alt="Cafetera" />
-            <h4>Reloj de pared</h4>
-            <p class="state">Nuevo</p>
-            <p class="location">Cúcuta</p>
-            <a href="../detail/index.html" class="btn">Solicitar trueque</a>
-          </article>
-
-          
+        <article class="card">
+          <img src="../../assets/images/reloj.jpg" alt="Cafetera" />
+          <h4>Reloj de pared</h4>
+          <p class="state">Nuevo</p>
+          <p class="location">Cúcuta</p>
+          <a href="../detail/index.html" class="btn">Solicitar trueque</a>
+        </article>
       </section>
     </div>
   </main>
