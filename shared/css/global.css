@@ -18,47 +18,57 @@
   
   /* Header */
   .site-header {
-    background: var(--background-color);
-    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px 20px;
     border-bottom: 1px solid #e5e5e5;
   }
+
   .site-header .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #007bff;
+    color: #007bff; /* Color azul */
     text-decoration: none;
-    margin-right: auto;
+    margin-right: 820px; /* Empuja los enlaces hacia la derecha */
   }
+
   .site-header .site-nav ul {
     list-style: none;
     display: flex;
+    gap: 5px; /* Espaciado de 5px entre los enlaces */
+    margin: 0;
   }
-  .site-header .site-nav li {
-    margin-left: 24px;
-  }
+
   .site-header .site-nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #333; /* Color del texto */
     font-weight: 500;
+    font-size: 1rem;
+    margin: 20px;
   }
+
   .search-form {
     display: flex;
-    margin-left: 24px;
+    align-items: center;
+    gap: 10px; /* Espaciado entre el input y el botón */
   }
+
   .search-form input {
-    padding: 6px 12px;
+    padding: 8px 12px;
     border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
+    border-radius: 20px; /* Bordes redondeados */
     outline: none;
+    font-size: 1rem;
   }
+
   .search-form button {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-radius: 0 4px 4px 0;
-    background: var(--primary-color);
-    color: #fff;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
     cursor: pointer;
+    color: #333;
   }
   
   /* Footer */
